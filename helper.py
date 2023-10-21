@@ -72,6 +72,7 @@ def acitivty(df):
     return x,df
 
 def wordcloud(selected_user,df):
+    nltk.download('stopwords')
     from nltk.corpus import stopwords
     f=open("stop_hinglish.txt","r")
     stop_words=f.read()
