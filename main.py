@@ -1,5 +1,6 @@
 import streamlit as st
-
+import nltk
+nltk.download('punkt')
 import preprocessing,helper
 import matplotlib.pyplot as plt
 import  seaborn as sns
