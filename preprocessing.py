@@ -8,7 +8,7 @@ def preprossing(data):
     df = pd.DataFrame({"user_message": message, "message_date": dates})
 
     # Parse the date and time with the century included
-    df["message_date"] = pd.to_datetime(df["message_date"], format="%m/%d/%y, %H:%M - ")
+    df["message_date"] = pd.to_datetime(df["message_date"], format="%d/%m/%y, %H:%M - ")
 
     # Rename the column if needed
     df.rename(columns={"message_date": "date"}, inplace=True)
