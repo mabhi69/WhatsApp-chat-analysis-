@@ -3,7 +3,7 @@ import pandas as pd
 
 from collections import Counter
 def fetch_total_messages(selected_user,df):
-
+    nltk.download('punkt')
     if selected_user=="Overall":
         return df.shape[0]
     else:
